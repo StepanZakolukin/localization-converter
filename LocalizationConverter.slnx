@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="LocalizationConverter.Core/LocalizationConverter.Core.csproj" />
+  <Project Path="LocalizationConverter.Tests/LocalizationConverter.Tests.csproj" />
+  <Project Path="LocalizationConverter/LocalizationConverter.csproj" />
+</Solution>

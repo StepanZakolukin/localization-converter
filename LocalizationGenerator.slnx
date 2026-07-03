@@ -1,5 +1,0 @@
-<Solution>
-  <Project Path="LocalizationGenerator.Core/LocalizationGenerator.Core.csproj" />
-  <Project Path="LocalizationGenerator.Tests/LocalizationGenerator.Tests.csproj" />
-  <Project Path="LocalizationGenerator/LocalizationGenerator.csproj" />
-</Solution>
