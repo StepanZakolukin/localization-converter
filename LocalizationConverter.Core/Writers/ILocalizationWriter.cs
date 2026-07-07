@@ -1,6 +1,9 @@
-﻿namespace LocalizationConverter.Core.Writers;
+﻿using FluentResults;
+using LocalizationConverter.Core.Models;
+
+namespace LocalizationConverter.Core.Writers;
 
 public interface ILocalizationWriter
 {
-    void Write(Localization localization);
+    Result Write(LocalizationDirectory directory);
 }

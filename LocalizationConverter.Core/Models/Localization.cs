@@ -1,4 +1,4 @@
-﻿namespace LocalizationConverter.Core;
+﻿namespace LocalizationConverter.Core.Models;
 
 public record Localization
 {

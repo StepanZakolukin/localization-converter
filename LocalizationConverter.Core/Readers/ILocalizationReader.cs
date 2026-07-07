@@ -1,6 +1,9 @@
-﻿namespace LocalizationConverter.Core.Readers;
+﻿using FluentResults;
+using LocalizationConverter.Core.Models;
+
+namespace LocalizationConverter.Core.Readers;
 
 public interface ILocalizationReader
 {
-    Localization Read();
+    Result<LocalizationDirectory> Read();
 }
