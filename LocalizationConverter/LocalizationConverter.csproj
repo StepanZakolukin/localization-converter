@@ -8,16 +8,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Localization\**" />
+    <EmbeddedResource Remove="Localization\**" />
+    <None Remove="Localization\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Spectre.Console" Version="0.57.2" />
-    <PackageReference Include="Terminal.Gui" Version="1.15.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\LocalizationConverter.Core\LocalizationConverter.Core.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Localization\" />
   </ItemGroup>
 
 </Project>

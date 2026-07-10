@@ -122,7 +122,7 @@ internal static class Program
     {
         AnsiConsole.Write(new Rule("[yellow]Шаг 3: Сохранение результатов[/]") { Justification = Justify.Left });
 
-        var prompt = new TextPrompt<string>("Укажите путь для [green]сохранения[/] файла (или напишите [bold red]'back'[/]):")
+        var prompt = new TextPrompt<string>("Укажите путь для [green]сохранения[/] файла (или напишите [bold red]'back'[/], чтобы вернуться назад):")
             .PromptStyle("white")
             .Validate(input =>
             {

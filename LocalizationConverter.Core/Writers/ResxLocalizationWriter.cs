@@ -37,7 +37,7 @@ public class ResxLocalizationWriter(string directoryPath) : ILocalizationWriter
         ArgumentException.ThrowIfNullOrWhiteSpace(targetDirectoryPath);
 
         // 1. Формируем полный путь к конечному файлу ресурса
-        var targetPath = Path.Combine(targetDirectoryPath, $"{file.Name}{FileExtensions.Resx}");
+        var targetPath = Path.Combine(targetDirectoryPath, file.Name + FileExtensions.Resx);
 
         // 2. Создаем корневой элемент со стандартными заголовками Microsoft
         var root = new XElement(ResxConstants.Nodes.Root,
