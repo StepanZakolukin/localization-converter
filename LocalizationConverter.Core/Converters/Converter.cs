@@ -4,7 +4,7 @@ using LocalizationConverter.Core.Writers;
 
 namespace LocalizationConverter.Core.Converters;
 
-public class LocalizationConverter(ILocalizationReader _reader, ILocalizationWriter _writer) : ILocalizationConverter
+public class Converter(ILocalizationReader _reader, ILocalizationWriter _writer) : ILocalizationConverter
 {
     public Result Convert()
     {

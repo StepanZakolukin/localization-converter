@@ -1,4 +1,6 @@
-﻿namespace LocalizationConverter.Core.Constants;
+﻿using System.Xml.Linq;
+
+namespace LocalizationConverter.Core.Constants;
 
 internal static class ResxConstants
 {
@@ -10,7 +12,7 @@ internal static class ResxConstants
         public const string Data = "data";
         public const string Value = "value";
         public const string NameAttribute = "name";
-        public const string SpaceAttribute = "xml:space";
+        public static readonly XName SpaceAttribute = XNamespace.Xml + "space";
         public const string PreserveValue = "preserve";
     }
 
