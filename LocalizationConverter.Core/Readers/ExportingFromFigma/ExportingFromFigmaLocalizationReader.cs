@@ -1,6 +1,7 @@
 using FluentResults;
 using LocalizationConverter.Core.Constants;
 using LocalizationConverter.Core.Models;
+using LocalizationConverter.Core.Readers.ExportingFromFigma.DTO;
 
 namespace LocalizationConverter.Core.Readers.ExportingFromFigma;
 
@@ -8,7 +9,7 @@ public class ExportingFromFigmaLocalizationReader(string filePath, IEnumerable<s
 {
     public Result<LocalizationDirectory> Read()
     {
-        var fileLoadResult = FigmaVariableExportReader.LoadFile(filePath);
+        var fileLoadResult = FigmaExport.LoadFromFile(filePath);
         if (fileLoadResult.IsFailed)
             return fileLoadResult.ToResult();
 
